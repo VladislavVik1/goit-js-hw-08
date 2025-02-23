@@ -67,7 +67,6 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-// Генерація розмітки
 const galleryMarkup = images.map(({ preview, original, description }) => `
     <li class="gallery-item">
         <a class="gallery-link" href="${original}">
@@ -78,7 +77,6 @@ const galleryMarkup = images.map(({ preview, original, description }) => `
 
 gallery.innerHTML = galleryMarkup;
 
-// Додавання обробника подій
 gallery.addEventListener('click', (event) => {
     event.preventDefault();
 
